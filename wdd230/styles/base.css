@@ -76,6 +76,10 @@ ul{
   margin-top: 20px;
 }
 
+.card a{
+  color: #ff69b4;
+}
+
 footer {
   text-align: center;
   padding: 10px;
