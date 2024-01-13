@@ -1,0 +1,19 @@
+/* Define the min-width breakpoint for larger views */
+@media (min-width: 768px) {
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Apply a dark grey and pink theme */
+    body {
+      background-color: #333;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+    /* Rest of the CSS rules go here */
+    }
+    
+  }
+  

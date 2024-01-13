@@ -1,0 +1,125 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Apply a dark grey and pink theme */
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+header, nav, main, footer {
+  padding: 15px;
+}
+
+header {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  margin-right: 10px; /* Adds spacing between the image and the name */
+}
+
+nav {
+  text-align: center;
+  background: #444;
+  max-width: 970px;
+  margin: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 50px;
+}
+
+nav a:hover {
+  color: #ff69b4; /* Pink color */
+  text-decoration: line-through;
+}
+
+h3 {
+  text-align: center;
+  color: #fff; /* Pink color */
+  text-decoration: overline;
+}
+
+h2 {
+    color: #ff69b4;
+}
+
+main h2 {
+    text-align: center;
+    padding: 20px;
+  }
+  
+ul{
+    list-style-type: none;
+}
+.card {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-decoration: wavy;
+}
+
+footer p {
+  margin: 5px;
+}
+
+/* Additional styling for specific elements can be added as needed */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  nav a {
+    display: block; /* Display the links as block elements */
+    margin: 10px 0; /* Add margin between the links */
+  }
+
+  .card {
+    width: 100%; /* Make the cards take full width in smaller views */
+  }
+}
+
+/* Flexbox for larger views */
+@media (min-width: 768px) {
+    .main {
+      display: flex; /* Use flexbox for the main content */
+      flex-wrap: wrap; /* Allow the cards to wrap to the next line */
+      max-width: 1000px;
+      margin: auto;
+    }
+  
+    .card {
+      flex: 0 0 70%; /* First card takes 70% of the space */
+      margin: 10px; /* Add margin between the cards */
+    }
+  
+    .card:nth-child(2) {
+      flex: 0 0 25%; /* Second card takes 25% of the space */
+    }
+  }
+  
