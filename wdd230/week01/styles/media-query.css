@@ -1,0 +1,26 @@
+/* Import the Google Font - Roboto in the body rule */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Apply styles to the header, main, and footer */
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc; /* Faint border */
+    padding: 1rem; /* Appropriate padding */
+    background-color: #e6f7ff; /* Blueish background color of my choice */
+}
+
+/* Set the main element to be a CSS grid with a grid template of only one column and equal gap of 1rem */
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Only one column */
+    grid-gap: 1rem; /* Equal gap of 1rem */
+}
+
+/* Apply styles to the section elements */
+section {
+    padding: 1rem; /* Padding */
+    background-color: #fff; /* White background */
+}
