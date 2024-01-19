@@ -9,7 +9,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://teekayzet.github.io/wdd230/images/harare.png">
     <meta property="og:url" content="https://teekayzet.github.io/wdd230">
-    <link rel="icon" href="/wdd230/images/favicon (2).ico">
+    <link rel="icon" href="/wdd230/images/favicon(2).ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/wdd230/styles/base.css">
@@ -23,18 +23,20 @@
         <img src="/wdd230/images/img.png" alt="my picture:Takudzwa Mutamburigwa">
         <h1>Takudzwa Mutamburigwa</h1>
     </div>
+    <div id="mode">
+      🕶️
+    </div>
   </header>
-
-    <nav>
     <!-- Navigation content goes here -->
     <nav>
-        <a href="/wdd230/index.html">Home</a>
-        <a href="#">Chamber</a>
-        <a href="#">Site Plan</a>
-        <a href="#">Form</a>
-        </nav>
+      <button id="menu"></button>
+      <ul class="navigation">
+        <li><a href="/wdd230/index.html">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Site Plan</a></li>
+        <li><a href="#">Form</a></li>
+      </ul>
     </nav>
-
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="main">
@@ -71,5 +73,7 @@
         <p id="lastModified"></p>
       </footer>
       <script src="/wdd230/scripts/getDates.js"></script>
+      <script src="/wdd230/scripts/hambutton.js"></script>
+      <script src="/wdd230/scripts/darkmode.js"></script>
 </body>
 </html>

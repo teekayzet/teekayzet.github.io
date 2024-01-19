@@ -7,7 +7,7 @@
 
 /* Apply a dark grey and pink theme */
 body {
-  background-color: #fff;
+  background-color: #333;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -32,7 +32,14 @@ header {
   border-radius: 50%; /* Makes the image circular */
   margin-right: 10px; /* Adds spacing between the image and the name */
 }
-
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
 nav {
   text-align: center;
   background: #272727;
@@ -40,16 +47,18 @@ nav {
   margin: auto;
 }
 
-nav a {
+nav li a {
   color: #fff;
   text-decoration: none;
   margin: 0 50px;
 }
 
-nav a:hover {
+nav li a:hover {
   color: #ff69b4; /* Pink color */
   text-decoration: line-through;
 }
+
+
 
 h3 {
   text-align: center;
@@ -109,7 +118,98 @@ footer p {
   .card {
     width: 100%; /* Make the cards take full width in smaller views */
   }
+  
+  /* Hamburger button styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    max-width: 700px;
+    margin: 1rem auto;
+  }
+  
+  /* small view navigation */
+  #menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0,0,0,.3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+     position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.open::before {
+    content: "❌";
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+  }
+  .navigation li {
+    display: none;
+  }
+  .navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+  .open li {
+    display: block;
+    width: 100%;
+  }
+  .open li a {
+    display: block;
+  }
+  
+  .active::before {
+    content: "📍 ";
+  }
+  
+  .stuff {
+    margin: .5rem;
+    border: 1px solid rgba(0,0,0,.1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+    
+  }
+  
+  /* Define the default styling for the menu items */
+  a {
+    /* Add your default styling for the menu items here */
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Default color */
+  }
+  
+  /* Define the styling for the active menu item */
+  a.active {
+    /* Add the visual changes for the active menu item here */
+    font-weight: bold; /* Example: Change the font weight to indicate the active state */
+    color: #007bff; /* Example: Change the color to indicate the active state */
+    /* Add any other visual changes as needed */
+  }
+  
+  
+  /* Additional styles for other elements as needed */
 }
+
 
 /* Flexbox for larger views */
 @media (min-width: 768px) {
@@ -127,6 +227,36 @@ footer p {
   
     .card:nth-child(2) {
       flex: 0 0 25%; /* Second card takes 25% of the space */
+    }
+
+    #menu {
+      display: none; /* hide hamburger button */
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-left: 0;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    #menu {
+      display: none; /* hide hamburger button */
+    }
+  
+    .navigation {
+      flex-direction: row;
+    }
+    .navigation li {
+      display: inline-block;
+      margin-right: 20px; /* Add some margin between the list items */
+    }    
+    
+    .stuff {
+      margin: 1rem auto;
     }
   }
   
