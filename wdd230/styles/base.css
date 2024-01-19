@@ -7,7 +7,7 @@
 
 /* Apply a dark grey and pink theme */
 body {
-  background-color: #333;
+  background-color: #fff;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -35,7 +35,7 @@ header {
 
 nav {
   text-align: center;
-  background: #444;
+  background: #272727;
   max-width: 970px;
   margin: auto;
 }
@@ -57,8 +57,11 @@ h3 {
   text-decoration: overline;
 }
 
-h2 {
+h1 {
     color: #ff69b4;
+}
+h2{
+  color: #ff69b4;
 }
 
 main h2 {
@@ -70,7 +73,7 @@ ul{
     list-style-type: none;
 }
 .card {
-  background-color: #444;
+  background-color: #272727;
   color: #fff;
   padding: 20px;
   margin-top: 20px;
@@ -83,7 +86,7 @@ ul{
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #222;
+  background-color: #272727;
   position: fixed;
   bottom: 0;
   width: 100%;
