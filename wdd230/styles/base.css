@@ -17,6 +17,8 @@ header, nav, main, footer {
 }
 
 header {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
@@ -33,6 +35,8 @@ header {
   margin-right: 10px; /* Adds spacing between the image and the name */
 }
 #mode {
+  display: flex;
+  align-items: center;
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
