@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+    #menu {
+      display: none; /* hide hamburger button */
+    }
+  
+    .navigation {
+      flex-direction: row;
+    }
+    .navigation li {
+      display: inline-block;
+      margin-right: 160px; /* Add some margin between the list items */
+    }    
+    
+    .stuff {
+      margin: 1rem auto;
+    }
+  }
+
+  .card {
+    flex: 0 0 30%; /* First card takes 70% of the space */
+    margin: 10px; /* Add margin between the cards */
+  }
+
+  .card:nth-child(2) {
+    flex: 0 0 30%; /* Second card takes 25% of the space */
+  }
+  
+  .card:nth-child(3){
+    flex: 0 0 35%;
+  }

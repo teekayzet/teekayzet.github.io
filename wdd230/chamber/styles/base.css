@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a dark grey and pink theme */
+body {
+  background-color: #fff;
+  color: #ffc8dd;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 15px;
+}
+
+header {
+  background-color: #ffc8dd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+
+nav li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 160px; /* Add some margin between the list items */
+}
+
+.navigation li a:hover {
+  color: #333; /* dark grey color */
+  text-decoration: line-through;
+}
+
+.hero img {
+  width: auto;
+  max-width: 100%;
+}
+
+.company-spotlights-container {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc; /* Add border to the whole spotlight area */
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.company-spotlight {
+  flex: 0 0 100%; /* Each spotlight takes full width */
+  transition: transform 0.5s ease;
+  display: none;
+  padding: 10px;
+  text-align: justify;
+  background-color: #000;
+}
+
+.active {
+  display: flex;
+}
+
+.logo-container {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Make the logo circular */
+}
+
+h4 {
+  color: #fff;
+  text-align: right;
+  margin: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 0 100%;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffc8dd;
+  margin: 30px;
+}
+.card h2 {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-decoration: underline;
+}
+.card h3 {
+  text-decoration: overline;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+.card p {
+  color: #1a1313;
+  text-align: justify;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffc8dd;
+  color: #333;
+  position: -webkit-sticky;
+  bottom: 0;
+  width: 100%;
+  border-radius: 15px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    display: block; /* Display the links as block elements */
+    margin: 10px 0; /* Add margin between the links */
+  }
+
+  .card {
+    flex: 1 0 100%;
+    margin: 10px 0;
+  }
+  .card:nth-child(1),
+  .card:nth-child(2){
+    flex: 1 0 100%;
+  }
+
+  /* Hamburger button styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  nav {
+    max-width: 700px;
+    margin: 1rem auto;
+  }
+
+  /* small view navigation */
+  #menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  #menu::before {
+    content: "☰";
+  }
+
+  #menu.open::before {
+    content: "❌";
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+  }
+  .navigation li {
+    display: none;
+  }
+  .navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+  .open li {
+    display: block;
+    width: 100%;
+  }
+  .open li a {
+    display: block;
+  }
+
+  .active::before {
+    content: "⚡";
+  }
+
+  .stuff {
+    margin: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+  }
+
+  /* Define the default styling for the menu items */
+  a {
+    /* Add your default styling for the menu items here */
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Default color */
+  }
+
+  /* Define the styling for the active menu item */
+  a.active {
+    /* Add the visual changes for the active menu item here */
+    font-weight: bold; /* Example: Change the font weight to indicate the active state */
+    color: #007bff; /* Example: Change the color to indicate the active state */
+    /* Add any other visual changes as needed */
+  }
+
+  /* Additional styles for other elements as needed */
+}
