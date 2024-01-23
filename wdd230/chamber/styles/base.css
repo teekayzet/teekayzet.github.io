@@ -25,6 +25,17 @@ header {
   align-items: center;
   border-radius: 15px;
 }
+.top-heading {
+  text-align: center;
+}
+
+.top-heading h1 {
+  display: block;
+  color: black;
+  margin: 0;
+  width: fit-content;
+  padding: 0 400px;
+}
 
 nav li a {
   color: #000;
@@ -130,10 +141,17 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+  
+  .top-heading h1 {
+    padding: 0;
+  }
+
   nav a {
     display: block; /* Display the links as block elements */
     margin: 10px 0; /* Add margin between the links */
   }
+  
 
   .card {
     flex: 1 0 100%;
