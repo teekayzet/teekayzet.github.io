@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/wdd230/week03/styles/responsive-images.css" />
+    <title>Responsive Images</title>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="/wdd230/week03/Images/hero-small.webp"
+            media
+          />
+          <source
+            media="(max-width: 1000px)"
+            srcset="/wdd230/week03/Images/hero-medium.webp"
+          />
+          <img
+            src="/wdd230/week03/images/hero-large.webp"
+            alt="actual size"
+            width="1500"
+            height="750"
+          />
+        </picture>
+      </div>
+    </main>
+  </body>
+</html>

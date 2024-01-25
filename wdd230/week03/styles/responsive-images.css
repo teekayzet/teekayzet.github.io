@@ -1,0 +1,10 @@
+/* responsive-images.css */
+
+img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto; /* Centers the image horizontally within its container */
+    max-width: 100%; /* Prevents the image from exceeding its original size */
+  }
+  
