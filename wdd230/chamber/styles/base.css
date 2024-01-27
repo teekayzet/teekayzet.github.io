@@ -19,6 +19,7 @@ footer {
   padding: 15px;
 }
 
+
 header {
   background-color: #ffc8dd;
   display: flex;
@@ -266,6 +267,45 @@ footer p {
   transition: transform 0.5s ease; /* Add a smooth transition effect */
 }
 
+#menu {
+  display: none; /* hide hamburger button */
+}
+
+.navigation {
+  flex-direction: row;
+}
+.navigation li {
+  display: inline-block;
+  margin-right: 160px; /* Add some margin between the list items */
+}    
+
+.stuff {
+  margin: 1rem auto;
+}
+
+.card {
+flex: 0 0 30%; /* First card takes 70% of the space */
+margin: 10px; /* Add margin between the cards */
+}
+
+.card:nth-child(2) {
+flex: 0 0 30%; /* Second card takes 25% of the space */
+}
+
+.card:nth-child(3){
+flex: 0 0 35%;
+}
+.lazyloading {
+padding: 20px;
+}
+
+.lazyloading h2 {
+text-align: left;
+}
+
+.lazyloading picture {
+margin-bottom: 20px;
+}
 
 @media (max-width: 768px) {
   .top-heading h1 {
@@ -356,11 +396,4 @@ footer p {
     transform: scale(1.00); /* Scale the image by 5% on hover */
   }
 
-}
-/* Apply styles for screens with a width of 768px or larger */
-@media (min-width: 768px) {
-}
-
-/* Apply styles for screens with a width of up to 768px */
-@media (max-width: 768px) {
 }
