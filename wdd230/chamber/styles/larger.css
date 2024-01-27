@@ -15,7 +15,6 @@
       margin: 1rem auto;
     }
   }
-
   .card {
     flex: 0 0 30%; /* First card takes 70% of the space */
     margin: 10px; /* Add margin between the cards */
@@ -27,4 +26,15 @@
   
   .card:nth-child(3){
     flex: 0 0 35%;
+  }
+  .lazyloading {
+    padding: 20px;
+  }
+
+  .lazyloading h2 {
+    text-align: left;
+  }
+
+  .lazyloading picture {
+    margin-bottom: 20px;
   }

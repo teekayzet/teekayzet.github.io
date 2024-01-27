@@ -9,6 +9,7 @@ body {
   background-color: #fff;
   color: #ffc8dd;
   font-family: "Josefin Sans", sans-serif;
+  text-align: center;
 }
 
 header,
@@ -50,6 +51,12 @@ nav li a {
 .navigation li a:hover {
   color: #333; /* dark grey color */
   text-decoration: line-through;
+}
+#visitMessage{
+  color: #ff00aa;
+  background-color: #333;
+  padding-top: 30px;
+  font-size: 30px;
 }
 
 .hero img {
@@ -139,12 +146,130 @@ footer {
 footer p {
   margin: 5px;
 }
+.demographics-icon img {
+  width: 50px; /* Set the width to your desired small size */
+  height: 50px; /* Set the height to your desired small size */
+}
+.demographics {
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.count {
+  font-size: 1.5em;
+  color: #ff00aa;
+}
+
+.label {
+  padding: 10px;
+  font-size: 1.5em;
+  color: #333;
+  font-size: 1em;
+}
+.events-icon img {
+  width: 50px; /* Set the width to your desired small size */
+  height: 50px; /* Set the height to your desired small size */
+}
+.event {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.event h2 {
+  color: #ff00aa;
+}
+.card h4{
+  color: #1a1313;
+}
+
+.event p {
+  margin: 5px 0;
+}
+
+.statistic-icon img {
+  width: 60px; /* Set the width to your desired small size */
+  height: 50px; /* Set the height to your desired small size */
+}
+
+.statistics-container {
+  display: flex;
+  height: 100%;
+}
+
+.statistics-sidebar {
+  flex: 0 0 33%; /* Sidebar occupies 33% of the full page width */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar{
+  padding: 20px;
+  background-color: #333;
+}
+
+.lazyloading{
+  padding: 100px;
+  background-color: #333;
+  text-align: center;
+}
+.lazyloading picture{
+  margin-bottom: 20px;
+  animation: fade 15s;
+}
+
+@keyframes fade{
+  0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}
+
+.lazyloading img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.caption {
+  color: #fff;
+  text-align: center;
+  text-decoration: line-through;
+}
+.sidebar .card{
+  margin-bottom: 20ox;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Sidebar and main area layout for desktop view */
+}
+
+.lazyloading picture:hover img {
+  transform: scale(1.02); /* Example: Scale the image by 10% on hover */
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+
 
 @media (max-width: 768px) {
-
-  
   .top-heading h1 {
-    padding: 0;
+    padding: 20px 0;
   }
 
   nav a {
@@ -224,27 +349,11 @@ footer p {
   .active::before {
     content: "⚡";
   }
-
-  .stuff {
-    margin: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #bed;
-    max-width: 580px;
-    height: 100vh;
+  .container{
+  display: block;
+  }
+  .lazyloading picture:hover img {
+    transform: scale(1.00); /* Scale the image by 5% on hover */
   }
 
-  /* Define the default styling for the menu items */
-  a {
-    /* Add your default styling for the menu items here */
-    text-decoration: none; /* Remove underline */
-    color: #000; /* Default color */
-  }
-
-  /* Define the styling for the active menu item */
-  a.active {
-    /* Add the visual changes for the active menu item here */
-    font-weight: bold; /* Example: Change the font weight to indicate the active state */
-    color: #007bff; /* Example: Change the color to indicate the active state */
-    /* Add any other visual changes as needed */
-  }
 }
