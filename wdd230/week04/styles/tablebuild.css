@@ -1,0 +1,49 @@
+/* Your chosen color scheme */
+body {
+    background-color:rgb(104, 4, 4);
+    font-family: Arial, sans-serif; /* Added a common font for better compatibility */
+  }
+  caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  h4 {
+    text-align: center;
+    color: #fff;
+    margin-top: 5px; /* Add margin to h4 for spacing */
+  }
+  
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #310000;
+    color: #fff;
+  }
+  
+  th:first-child {
+    padding: none;
+    border: none;
+    background-color: rgb(104, 4, 4); /* Background color for the first th in thead */
+  }
+  
+  th{
+    padding: 12px;
+    text-align: center;
+  }
+   td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid rgb(104, 4, 4);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ecf0f1; /* Zebra striping color */
+  }
+  
