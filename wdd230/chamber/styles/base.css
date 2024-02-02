@@ -1,10 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Reset font size adjustments after orientation changes */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
-/* Apply a dark grey and pink theme */
+/* Apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark grey and pink theme */
 body {
   background-color: #fff;
   color: #ffc8dd;
@@ -19,7 +28,6 @@ footer {
   padding: 15px;
 }
 
-
 header {
   background-color: #ffc8dd;
   display: flex;
@@ -27,16 +35,13 @@ header {
   align-items: center;
   border-radius: 15px;
 }
-.top-heading {
-  text-align: center;
-}
 
 .top-heading h1 {
   display: block;
   color: black;
   margin: 0;
   width: fit-content;
-  padding: 0 400px;
+  padding: 0 400px; /* Adjust as needed */
 }
 
 nav li a {
@@ -46,14 +51,15 @@ nav li a {
 
 .navigation li {
   display: inline-block;
-  margin-right: 160px; /* Add some margin between the list items */
+  margin-right: 160px; /* Add margin between list items */
 }
 
 .navigation li a:hover {
-  color: #333; /* dark grey color */
+  color: #333;
   text-decoration: line-through;
 }
-#visitMessage{
+
+#visitMessage {
   color: #ff00aa;
   background-color: #333;
   padding-top: 30px;
@@ -65,16 +71,17 @@ nav li a {
   max-width: 100%;
 }
 
+/* Company spotlights styles */
 .company-spotlights-container {
   overflow: hidden;
   position: relative;
-  border: 1px solid #ccc; /* Add border to the whole spotlight area */
+  border: 1px solid #ccc;
   border-radius: 5px;
   margin: 30px;
 }
 
 .company-spotlight {
-  flex: 0 0 100%; /* Each spotlight takes full width */
+  flex: 0 0 100%;
   transition: transform 0.5s ease;
   display: none;
   padding: 10px;
@@ -94,7 +101,7 @@ nav li a {
 .logo {
   width: 100px;
   height: 100px;
-  border-radius: 50%; /* Make the logo circular */
+  border-radius: 50%;
 }
 
 h4 {
@@ -103,6 +110,7 @@ h4 {
   margin: 20px;
 }
 
+/* Card container styles */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -118,39 +126,33 @@ h4 {
   background-color: #ffc8dd;
   margin: 30px;
 }
+
 .card h2 {
   color: rgb(0, 0, 0);
   padding: 10px;
   text-decoration: underline;
 }
+
 .card h3 {
   text-decoration: overline;
   text-align: center;
   padding: 10px;
   color: #333;
 }
+
 .card p {
   color: #1a1313;
   text-align: justify;
 }
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #ffc8dd;
-  color: #333;
-  position: -webkit-sticky;
-  bottom: 0;
-  width: 100%;
-  border-radius: 15px;
+
+/* Demographics styles */
+.demographics-icon img,
+.events-icon img,
+.statistic-icon img {
+  width: 50px;
+  height: 50px;
 }
 
-footer p {
-  margin: 5px;
-}
-.demographics-icon img {
-  width: 50px; /* Set the width to your desired small size */
-  height: 50px; /* Set the height to your desired small size */
-}
 .demographics {
   text-align: center;
   display: inline-block;
@@ -171,10 +173,8 @@ footer p {
   color: #333;
   font-size: 1em;
 }
-.events-icon img {
-  width: 50px; /* Set the width to your desired small size */
-  height: 50px; /* Set the height to your desired small size */
-}
+
+/* Event styles */
 .event {
   border: 2px solid #000;
   border-radius: 5px;
@@ -186,7 +186,8 @@ footer p {
 .event h2 {
   color: #ff00aa;
 }
-.card h4{
+
+.card h4 {
   color: #1a1313;
 }
 
@@ -194,18 +195,14 @@ footer p {
   margin: 5px 0;
 }
 
-.statistic-icon img {
-  width: 60px; /* Set the width to your desired small size */
-  height: 50px; /* Set the height to your desired small size */
-}
-
+/* Statistics styles */
 .statistics-container {
   display: flex;
   height: 100%;
 }
 
 .statistics-sidebar {
-  flex: 0 0 33%; /* Sidebar occupies 33% of the full page width */
+  flex: 0 0 33%;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -217,28 +214,30 @@ footer p {
   padding: 20px;
 }
 
-.sidebar{
+.sidebar {
   padding: 20px;
   background-color: #333;
 }
 
-.lazyloading{
+/* Lazy loading styles */
+.lazyloading {
   padding: 100px;
   background-color: #333;
   text-align: center;
 }
-.lazyloading picture{
+
+.lazyloading picture {
   margin-bottom: 20px;
   animation: fade 15s;
 }
 
-@keyframes fade{
-  0%{
-  opacity: 0;
-}
-100%{
-  opacity: 1;
-}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .lazyloading img {
@@ -253,58 +252,285 @@ footer p {
   text-align: center;
   text-decoration: line-through;
 }
-.sidebar .card{
+
+.sidebar .card {
   margin-bottom: 20px;
 }
 
+/* Responsive styles */
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* Sidebar and main area layout for desktop view */
+  grid-template-columns: 1fr 2fr;
 }
 
 .lazyloading picture:hover img {
-  transform: scale(1.02); /* Example: Scale the image by 10% on hover */
-  transition: transform 0.5s ease; /* Add a smooth transition effect */
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
 }
 
 .navigation {
   flex-direction: row;
 }
+
 .navigation li {
   display: inline-block;
-  margin-right: 160px; /* Add some margin between the list items */
-}    
+  margin-right: 160px;
+}
 
 .stuff {
   margin: 1rem auto;
 }
 
-.card {
-flex: 0 0 30%; /* First card takes 70% of the space */
-margin: 10px; /* Add margin between the cards */
-}
-
+.card:nth-child(1),
 .card:nth-child(2) {
-flex: 0 0 30%; /* Second card takes 25% of the space */
+  flex: 1 0 100%;
 }
 
-.card:nth-child(3){
-flex: 0 0 35%;
-}
-.lazyloading {
-padding: 20px;
+.card:nth-child(3) {
+  flex: 0 0 35%;
 }
 
-.lazyloading h2 {
-text-align: left;
-}
-
-.lazyloading picture {
-margin-bottom: 20px;
-}
-
+/* Hamburger menu styles */
 #menu {
-  display: none; /* hide hamburger button */
+  display: none;
+}
+
+/* Form styles */
+form {
+  text-align: left;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: #ff00aa;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #000;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #000;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem;
+  color: #1a1313;
+}
+
+form label.top textarea {
+  width: 100%;
+  font-size: 1rem;
+  max-width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.1);
+  resize: vertical;
+}
+
+form label.top textarea::placeholder {
+  color: #333;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #000;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 100%;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: rgb(0, 0, 255) solid 6px;
+}
+
+/* Membership styles */
+.design {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #ffc8dd;
+}
+
+main h1 {
+  color: #000;
+  background-color: #ffc8dd;
+}
+
+.membership h4{
+  text-decoration: overline;
+}
+
+main {
+  background-color: #ffc8dd;
+  border-radius: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 10%;
+}
+
+.cardfrontdetails p {
+  text-align: justify;
+  padding-bottom: 5px;
+}
+
+.flip-card {
+  margin: 5px;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+
+.flip-card-front {
+  color: white;
+  background-size: cover;
+}
+
+.flip-card-back {
+  background-size: cover;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card1 {
+  background-image: linear-gradient(
+    180deg,
+    rgba(156, 154, 154, 0.7),
+    rgba(0, 0, 0, 0.8)
+  ), url(/wdd230/chamber/images/freeplan.webp);
+}
+
+.card2 {
+  background-image: linear-gradient(
+    180deg,
+    rgba(156, 154, 154, 0.7),
+    rgba(0, 0, 0, 0.8)
+  ), url(/wdd230/chamber/images/bronzeplan.webp);
+}
+
+.card3 {
+  background-image: linear-gradient(
+    180deg,
+    rgba(156, 154, 154, 0.7),
+    rgba(0, 0, 0, 0.8)
+  ), url(/wdd230/chamber/images/silverplan.webp);
+}
+
+.card4 {
+  background-image: linear-gradient(
+    180deg,
+    rgba(156, 154, 154, 0.7),
+    rgba(0, 0, 0, 0.8)
+  ), url(/wdd230/chamber/images/goldplan.webp);
+}
+
+.cardtitle h3 {
+  font-size: 30px;
+  margin: 50px;
+}
+
+.cardfrontdetails {
+  margin: 0 10%;
+  width: 80%;
+}
+
+.cardbackdetails {
+  margin: 60px 0px;
+}
+
+.from {
+  text-transform: uppercase;
+}
+
+.price {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.btn {
+  background: #ffc8dd;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  border-radius: 5px;
+}
+.thank-you-message p{
+  color: #000;
+}
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  border-radius: 15px;
+  font-size: smaller;
+  position: -ms-page;
+}
+
+footer p {
+  margin: 5px;
 }
 
 @media (max-width: 768px) {
@@ -313,21 +539,20 @@ margin-bottom: 20px;
   }
 
   nav a {
-    display: block; /* Display the links as block elements */
-    margin: 10px 0; /* Add margin between the links */
+    display: block;
+    margin: 10px 0;
   }
-  
 
   .card {
     flex: 1 0 100%;
     margin: 10px 0;
   }
+
   .card:nth-child(1),
-  .card:nth-child(2){
+  .card:nth-child(2) {
     flex: 1 0 100%;
   }
 
-  /* Hamburger button styles */
   * {
     margin: 0;
     padding: 0;
@@ -339,7 +564,6 @@ margin-bottom: 20px;
     margin: 1rem auto;
   }
 
-  /* small view navigation */
   #menu {
     display: initial;
     font-size: 1.5rem;
@@ -367,9 +591,11 @@ margin-bottom: 20px;
     background-color: #333;
     color: #fff;
   }
+
   .navigation li {
     display: none;
   }
+
   .navigation li a {
     display: block;
     padding: 1rem;
@@ -378,11 +604,11 @@ margin-bottom: 20px;
     color: #fff;
   }
 
-  /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
   .open li {
     display: block;
     width: 100%;
   }
+
   .open li a {
     display: block;
   }
@@ -390,11 +616,21 @@ margin-bottom: 20px;
   .active::before {
     content: "⚡";
   }
-  .container{
-  display: block;
-  }
-  .lazyloading picture:hover img {
-    transform: scale(1.00); /* Scale the image by 5% on hover */
+
+  .container {
+    display: block;
   }
 
+  .lazyloading picture:hover img {
+    transform: scale(1);
+  }
+  .design{
+    display: block;
+  }
+  .flip-card{
+    height: 300px;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(0deg);
+  }
 }
