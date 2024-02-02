@@ -627,7 +627,7 @@ footer p {
     display: block;
   }
   .flip-card{
-    height: 300px;
+    height: 325px;
   }
   .flip-card:hover .flip-card-inner {
     transform: rotateY(0deg);
