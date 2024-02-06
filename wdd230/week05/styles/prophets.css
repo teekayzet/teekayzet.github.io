@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: #ccc;
+}
+
+header,
+main,
+footer {
+  margin: 1rem;
+}
+
+h1 {
+  color: #000;
+  border-bottom: 1px solid #eee;
+  text-shadow: 0 0 15px #777;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  color: navy;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid #bbb;
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  margin-left: 2rem;
+}
+
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+img {
+  width: auto;
+  max-width: 325px;
+  box-shadow: 0 0 30px #777;
+  height: 200px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+footer {
+  border-top: 1px solid #555;
+  padding: 20px;
+  text-align: right;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#cards > section {
+  width: calc(25% - 20px); /* Adjust the width to accommodate margin */
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Optional: Add border for visualization */
+  box-sizing: border-box; /* Ensure borders don't affect width */
+}
+
+#cards > section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#cards > section img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cards > section {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+  }
+}
