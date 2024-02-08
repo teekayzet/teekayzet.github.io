@@ -1,7 +1,6 @@
-// links.js
-
 const baseURL = "https://teekayzet.github.io/wdd230/";
 const linksURL = "https://teekayzet.github.io/wdd230/data/links.json";
+const linksContainer = document.querySelector("#learning-activities");
 
 async function getLinks() {
   try {
@@ -14,7 +13,6 @@ async function getLinks() {
 }
 
 function displayLinks(weeks) {
-  const linksContainer = document.querySelector(".card ul");
   
   weeks.forEach((week) => {
     const listItem = document.createElement("li");
