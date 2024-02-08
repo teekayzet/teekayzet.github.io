@@ -76,62 +76,24 @@
       <div class="main">
         <section class="card">
           <h3>Learning Activities</h3>
-          <ul>
-            <li>
-              Week 01:
-              <a href="/wdd230/week01/holygrail.html">Layout |</a>
-              <a href="/wdd230/week01/media-query.html">Media Query |</a>
-              <a href="/wdd230/week01/chamber-site-plan.html"
-                >Chamber Site Plan</a
-              >
-            </li>
-            <li>
-              Week 02:
-              <a href="/wdd230/week02/design.html">Design |</a>
-              <a href="https://codepen.io/teekayzet/pen/gOEWdZd">Hamburger |</a>
-              <a href="/wdd230/week02/bom.html">Book of Mormon - Top 10 |</a>
-              <a href="/wdd230/chamber/index.html">Chamber Home Page</a>
-            </li>
-            <li>
-              Week 03:
-              <a href="/wdd230/week03/images/landscape.webp">Landscape |</a>
-              <a href="/wdd230/week03/lazyload.html">lazyload page |</a>
-              <a href="/wdd230/week03/responsive-images.html"
-                >responsive-images |</a
-              >
-              <a href="/wdd230/week03/bom.html">Book of Mormon - Top 10</a>
-            </li>
-            <li>
-              Week 04:
-              <a href="https://codepen.io/teekayzet/pen/bGZvWEw"
-                >CSS Pseudo-classes |</a
-              >
-              <a href="/wdd230/week04/images/combinator-exercise.png"
-                >Combinator exercise |</a
-              >
-              <a href="/wdd230/week04/tablebuild.html">Table build |</a>
-              <a href="/wdd230/week04/form-start/index.html">Forms - Start</a>
-            </li>
-            <li>
-              Week 05:
-              <a href="https://codepen.io/teekayzet/pen/yLwEZLY"
-                >CSS Pseudo-elements |</a
-              >
-              <a href="/wdd230/week05/new-ward-members.json"
-                >New Ward Members |</a
-              >
-              <a href="/wdd230/week05/prophets.html">Prophets |</a>
-              <a href="/wdd230/week05/weather.html"> weather </a>
-            </li>
-            <li>Week 06:</li>
-            <li>Week 07:</li>
-            <!-- Add more learning activities as needed -->
+          <ul id="learning-activities">
+            <!-- Dynamic content will be added here -->
           </ul>
         </section>
 
         <section class="card">
           <h3>Information</h3>
           <!-- Placeholder information about weather, visits, etc. -->
+          <div class="weather-info">
+            <span id="current-temp"></span>
+            <figure>
+              <img id="weather-icon" src="" alt="" />
+              <figcaption id="weather-description"></figcaption>
+            </figure>
+            <div id="visit-counter">
+              Visit Count: <span id="counter">0</span>
+            </div>
+          </div>
         </section>
       </div>
     </main>
@@ -154,5 +116,7 @@
     <script src="/wdd230/scripts/hambutton.js"></script>
     <script src="/wdd230/scripts/darkmode.js"></script>
     <script src="/wdd230/scripts/pagecount.js"></script>
+    <script src="/wdd230/week05/scripts/weather.js"></script>
+    <script src="/wdd230/scripts/links.js"></script>
   </body>
 </html>

@@ -1,0 +1,106 @@
+{
+    "weeks": [
+      {
+        "week": "Week 01",
+        "activities": [
+          {
+            "title": "Layout",
+            "url": "/wdd230/week01/holygrail.html"
+          },
+          {
+            "title": "Media Query",
+            "url": "/wdd230/week01/media-query.html"
+          },
+          {
+            "title": "Chamber Site Plan",
+            "url": "/wdd230/week01/chamber-site-plan.html"
+          }
+        ]
+      },
+      {
+        "week": "Week 02",
+        "activities": [
+          {
+            "title": "Design",
+            "url": "/wdd230/week02/design.html"
+          },
+          {
+            "title": "Hamburger",
+            "url": "https://codepen.io/teekayzet/pen/gOEWdZd"
+          },
+          {
+            "title": "Book of Mormon - Top 10",
+            "url": "/wdd230/week02/bom.html"
+          },
+          {
+            "title": "Chamber Home Page",
+            "url": "/wdd230/chamber/index.html"
+          }
+        ]
+      },
+      {
+        "week": "Week 03",
+        "activities": [
+          {
+            "title": "Landscape",
+            "url": "/wdd230/week03/images/landscape.webp"
+          },
+          {
+            "title": "lazyload page",
+            "url": "/wdd230/week03/lazyload.html"
+          },
+          {
+            "title": "responsive-images",
+            "url": "/wdd230/week03/responsive-images.html"
+          },
+          {
+            "title": "Book of Mormon - Top 10",
+            "url": "/wdd230/week03/bom.html"
+          }
+        ]
+      },
+      {
+        "week": "Week 04",
+        "activities": [
+          {
+            "title": "CSS Pseudo-classes",
+            "url": "https://codepen.io/teekayzet/pen/bGZvWEw"
+          },
+          {
+            "title": "Combinator exercise",
+            "url": "/wdd230/week04/images/combinator-exercise.png"
+          },
+          {
+            "title": "Table build",
+            "url": "/wdd230/week04/tablebuild.html"
+          },
+          {
+            "title": "Forms - Start",
+            "url": "/wdd230/week04/form-start/index.html"
+          }
+        ]
+      },
+      {
+        "week": "Week 05",
+        "activities": [
+          {
+            "title": "CSS Pseudo-elements",
+            "url": "https://codepen.io/teekayzet/pen/yLwEZLY"
+          },
+          {
+            "title": "New Ward Members",
+            "url": "/wdd230/week05/new-ward-members.json"
+          },
+          {
+            "title": "Prophets",
+            "url": "/wdd230/week05/prophets.html"
+          },
+          {
+            "title": "weather",
+            "url": "/wdd230/week05/weather.html"
+          }
+        ]
+      }
+    ]
+  }
+  

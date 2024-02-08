@@ -104,7 +104,13 @@ main h2 {
   text-align: center;
   padding: 20px;
 }
+.weather-info{
+  margin: 20px;
+}
 
+.weather-info #visit-counter{
+  margin-top: 20px;
+}
 ul {
   list-style-type: none;
 }
