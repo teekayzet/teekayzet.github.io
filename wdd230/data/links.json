@@ -5,15 +5,15 @@
         "activities": [
           {
             "title": "Layout",
-            "url": "/wdd230/week01/holygrail.html"
+            "url": "https://teekayzet.github.io/wdd230/week01/holygrail.html"
           },
           {
             "title": "Media Query",
-            "url": "/wdd230/week01/media-query.html"
+            "url": "https://teekayzet.github.io/wdd230/week01/media-query.html"
           },
           {
             "title": "Chamber Site Plan",
-            "url": "/wdd230/week01/chamber-site-plan.html"
+            "url": "https://teekayzet.github.io/wdd230/week01/chamber-site-plan.html"
           }
         ]
       },
@@ -22,7 +22,7 @@
         "activities": [
           {
             "title": "Design",
-            "url": "/wdd230/week02/design.html"
+            "url": "https://teekayzet.github.io/wdd230/week02/design.html"
           },
           {
             "title": "Hamburger",
@@ -30,11 +30,11 @@
           },
           {
             "title": "Book of Mormon - Top 10",
-            "url": "/wdd230/week02/bom.html"
+            "url": "https://teekayzet.github.io/wdd230/week02/bom.html"
           },
           {
             "title": "Chamber Home Page",
-            "url": "/wdd230/chamber/index.html"
+            "url": "https://teekayzet.github.io/wdd230/chamber/index.html"
           }
         ]
       },
@@ -43,19 +43,19 @@
         "activities": [
           {
             "title": "Landscape",
-            "url": "/wdd230/week03/images/landscape.webp"
+            "url": "https://teekayzet.github.io/wdd230/week03/images/landscape.webp"
           },
           {
             "title": "lazyload page",
-            "url": "/wdd230/week03/lazyload.html"
+            "url": "https://teekayzet.github.io/wdd230/week03/lazyload.html"
           },
           {
             "title": "responsive-images",
-            "url": "/wdd230/week03/responsive-images.html"
+            "url": "https://teekayzet.github.io/wdd230/week03/responsive-images.html"
           },
           {
             "title": "Book of Mormon - Top 10",
-            "url": "/wdd230/week03/bom.html"
+            "url": "https://teekayzet.github.io/wdd230/week03/bom.html"
           }
         ]
       },
@@ -68,15 +68,15 @@
           },
           {
             "title": "Combinator exercise",
-            "url": "/wdd230/week04/images/combinator-exercise.png"
+            "url": "https://teekayzet.github.io/wdd230/week04/images/combinator-exercise.png"
           },
           {
             "title": "Table build",
-            "url": "/wdd230/week04/tablebuild.html"
+            "url": "https://teekayzet.github.io/wdd230/week04/tablebuild.html"
           },
           {
             "title": "Forms - Start",
-            "url": "/wdd230/week04/form-start/index.html"
+            "url": "https://teekayzet.github.io/wdd230/week04/form-start/index.html"
           }
         ]
       },
@@ -89,15 +89,15 @@
           },
           {
             "title": "New Ward Members",
-            "url": "/wdd230/week05/new-ward-members.json"
+            "url": "https://teekayzet.github.io/wdd230/week05/new-ward-members.json"
           },
           {
             "title": "Prophets",
-            "url": "/wdd230/week05/prophets.html"
+            "url": "https://teekayzet.github.io/wdd230/week05/prophets.html"
           },
           {
             "title": "weather",
-            "url": "/wdd230/week05/weather.html"
+            "url": "https://teekayzet.github.io/wdd230/week05/weather.html"
           }
         ]
       }
