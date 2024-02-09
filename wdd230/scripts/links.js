@@ -1,35 +1,28 @@
-const baseURL = "https://teekayzet.github.io/wdd230/";
 const linksURL = "https://teekayzet.github.io/wdd230/data/links.json";
-const linksContainer = document.querySelector("#learning-activities");
 
 async function getLinks() {
-  try {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    displayLinks(data);
-  } catch (error) {
-    console.error("Error fetching links:", error);
-  }
+    try {
+        const response = await fetch(linksURL);
+        const data = await response.json();
+        displayLinks(data.weeks);
+    } catch (error) {
+        console.error('Error fetching links:', error);
+    }
 }
 
 function displayLinks(weeks) {
-  
-  weeks.forEach((week) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = `${week.week}: `;
-    
-    week.links.forEach((link) => {
-      const anchor = document.createElement("a");
-      anchor.href = baseURL + link.url;
-      anchor.textContent = link.title;
-      anchor.setAttribute("target", "_blank");
-      
-      listItem.appendChild(anchor);
-      listItem.appendChild(document.createTextNode(" | ")); // Add separator
+    const learningActivitiesList = document.querySelector('.learning-activities');
+    weeks.forEach(week => {
+        const weekListItem = document.createElement('li');
+        weekListItem.textContent = week.week + ":";
+
+        const weekLinks = week.links.map(link => {
+            return `<a href="${link.url}">${link.title}</a>`;
+        }).join(' | ');
+
+        weekListItem.innerHTML += weekLinks;
+        learningActivitiesList.appendChild(weekListItem);
     });
-    
-    linksContainer.appendChild(listItem);
-  });
 }
 
 getLinks();
