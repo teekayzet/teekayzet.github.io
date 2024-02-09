@@ -1,24 +1,44 @@
-    // Fetching weather data from OpenWeatherMap API
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=Harare&appid=554871bfeddb818f89851fd21bec81f5&units=metric')
-        .then(response => response.json())
-        .then(data => {
-            // Update temperature
-            const currentTemp = data.main.temp;
-            document.getElementById('current-temp').textContent = currentTemp + "°C";
+        // select HTML elements in the document
+const currentTemp = document.querySelector("#current-temp");
+const weatherIcon = document.querySelector("#weather-icon");
+const captionDesc = document.querySelector("figcaption");
 
-            // Update weather description
-            const weatherDescription = data.weather[0].description;
-            document.getElementById('weather-description').textContent = weatherDescription;
+// Declare a const variable named "url" and assign it a valid URL string
+const url = "https://api.openweathermap.org/data/2.5/weather";
 
-            // Update weather icon
-            const weatherIcon = data.weather[0].icon;
-            const iconUrl = "http://openweathermap.org/img/wn/" + weatherIcon + ".png";
-            document.getElementById('weather-icon').src = iconUrl;
-            document.getElementById('weather-icon').alt = weatherDescription;
+// Define an asynchronous function named "apiFetch()"
+async function apiFetch() {
+  try {
+    // Fetch data from the API
+    const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Harare&appid=554871bfeddb818f89851fd21bec81f5&units=metric');
 
-            // Call function to update visit count
-            updateVisitCount();
-        })
-        .catch(error => {
-            console.log('Error fetching weather data:', error);
-        });
+    // Check if response is OK
+    if (response.ok) {
+      // Convert response to JSON
+      const data = await response.json();
+      // Output data to the console for testing
+      console.log(data);
+      // Call the displayResults function to update the HTML
+      displayResults(data);
+    } else {
+      // If response is not OK, throw an error with the response text
+      throw new Error(response.statusText);
+    }
+  } catch (error) {
+    // Output any errors to the console
+    console.error("Error fetching data:", error);
+  }
+}
+
+// Define the displayResults function to update the HTML with weather data
+function displayResults(data) {
+  currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute("src", iconsrc);
+  weatherIcon.setAttribute("alt", desc);
+  captionDesc.textContent = `${desc}`;
+}
+
+// Invoke the apiFetch() function
+apiFetch();

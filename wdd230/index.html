@@ -76,16 +76,21 @@
       <div class="main">
         <section class="card">
           <h3>Learning Activities</h3>
-          <ul id="learning-activities">
+          <ul class="learning-activities" id="learning-activities">
             <!-- Dynamic content will be added here -->
           </ul>
-        </section>
-        
+        </section>        
 
         <section class="card">
           <h3>Information</h3>
-          <!-- Placeholder information about weather, visits, etc. -->
+          <span id="current-temp"></span>
+          <figure>
+            <img id="weather-icon" src="" alt="" />
+            <figcaption></figcaption>
+          </figure>
+          <div id="visit-counter">Page visits: <span id="counter">0</span></div>
         </section>
+
       </div>
     </main>
     <div class="map-container">
@@ -101,13 +106,12 @@
         &copy; <span id="currentYear"></span> Takudzwa Mutamburigwa, Zimbabwe
       </p>
       <p id="lastModified"></p>
-      <div id="visit-counter">Page visits: <span id="counter">0</span></div>
     </footer>
     <script src="/wdd230/scripts/getDates.js"></script>
     <script src="/wdd230/scripts/hambutton.js"></script>
     <script src="/wdd230/scripts/darkmode.js"></script>
     <script src="/wdd230/scripts/pagecount.js"></script>
-    <script src="/wdd230/week05/scripts/weather.js"></script>
+    <script src="/wdd230/scripts/weather.js"></script>
     <script src="/wdd230/scripts/links.js"></script>
   </body>
 </html>
