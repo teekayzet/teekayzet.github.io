@@ -1,0 +1,185 @@
+{
+    "companies": [
+      {
+        "name": "ABC Technologies",
+        "address": "123 Main Street, Harare",
+        "phone": "+263 77 123 4567",
+        "website": "http://www.abctech.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-232.svg",
+        "membership_level": "Gold",
+        "other_information": "Leading provider of IT solutions."
+      },
+      {
+        "name": "XYZ Consultancy",
+        "address": "456 First Avenue, Harare",
+        "phone": "+263 77 987 6543",
+        "website": "http://www.xyzconsultancy.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-233.svg",
+        "membership_level": "Silver",
+        "other_information": "Offering expert consulting services."
+      },
+      {
+        "name": "Harare Construction Ltd.",
+        "address": "789 Second Street, Harare",
+        "phone": "+263 77 456 7890",
+        "website": "http://www.harareconstruction.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-295.svg",
+        "membership_level": "Bronze",
+        "other_information": "Specializing in commercial and residential construction."
+      },
+      {
+        "name": "Greenfields Agriculture",
+        "address": "101 Green Road, Harare",
+        "phone": "+263 77 654 3210",
+        "website": "http://www.greenfieldsagri.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-290.svg",
+        "membership_level": "Platinum",
+        "other_information": "Leading agricultural products supplier."
+      },
+      {
+        "name": "Harare Finance Group",
+        "address": "246 Finance Avenue, Harare",
+        "phone": "+263 77 135 2468",
+        "website": "http://www.hararefinancegroup.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-291.svg",
+        "membership_level": "Gold",
+        "other_information": "Offering comprehensive financial services."
+      },
+      {
+        "name": "Harare Pharmaceuticals",
+        "address": "369 Medical Road, Harare",
+        "phone": "+263 77 369 2580",
+        "website": "http://www.hararepharma.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-282.svg",
+        "membership_level": "Silver",
+        "other_information": "Leading supplier of pharmaceutical products."
+      },
+      {
+        "name": "Harare Logistics Solutions",
+        "address": "789 Logistics Street, Harare",
+        "phone": "+263 77 789 1234",
+        "website": "http://www.hararelogistics.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-283.svg",
+        "membership_level": "Bronze",
+        "other_information": "Providing efficient logistics solutions."
+      },
+      {
+        "name": "Harare Tech Solutions",
+        "address": "246 Tech Street, Harare",
+        "phone": "+263 77 246 1357",
+        "website": "http://www.hararetechsolutions.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-284.svg",
+        "membership_level": "Platinum",
+        "other_information": "Specializing in technology consulting services."
+      },
+      {
+        "name": "Harare Foods Ltd.",
+        "address": "369 Food Avenue, Harare",
+        "phone": "+263 77 369 1470",
+        "website": "http://www.hararefoods.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-288.svg",
+        "membership_level": "Gold",
+        "other_information": "Leading supplier of food products."
+      },
+      {
+        "name": "Harare Motors",
+        "address": "789 Motor Street, Harare",
+        "phone": "+263 77 789 2580",
+        "website": "http://www.hararemotors.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-299.svg",
+        "membership_level": "Silver",
+        "other_information": "Specializing in automotive sales and services."
+      },
+      {
+        "name": "Harare Fashion House",
+        "address": "101 Fashion Avenue, Harare",
+        "phone": "+263 77 654 9630",
+        "website": "http://www.hararefashion.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-317.svg",
+        "membership_level": "Bronze",
+        "other_information": "Offering stylish clothing and accessories."
+      },
+      {
+        "name": "Harare Medical Center",
+        "address": "246 Medical Road, Harare",
+        "phone": "+263 77 135 7890",
+        "website": "http://www.hararemedical.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-321.svg",
+        "membership_level": "Platinum",
+        "other_information": "Comprehensive healthcare services provider."
+      },
+      {
+        "name": "Harare Energy Solutions",
+        "address": "369 Energy Street, Harare",
+        "phone": "+263 77 369 4560",
+        "website": "http://www.harareenergy.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-297.svg",
+        "membership_level": "Gold",
+        "other_information": "Specializing in renewable energy solutions."
+      },
+      {
+        "name": "Harare Legal Associates",
+        "address": "789 Legal Avenue, Harare",
+        "phone": "+263 77 789 3690",
+        "website": "http://www.hararelegal.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-311.svg",
+        "membership_level": "Silver",
+        "other_information": "Providing legal consultation and representation."
+      },
+      {
+        "name": "Harare Education Group",
+        "address": "101 Education Street, Harare",
+        "phone": "+263 77 654 8520",
+        "website": "http://www.harareeducation.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-300.svg",
+        "membership_level": "Bronze",
+        "other_information": "Offering quality educational services."
+      },
+      {
+        "name": "Harare Security Services",
+        "address": "246 Security Road, Harare",
+        "phone": "+263 77 135 1470",
+        "website": "http://www.hararesecurity.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-325.svg",
+        "membership_level": "Platinum",
+        "other_information": "Providing reliable security solutions."
+      },
+      {
+        "name": "Harare Hospitality Group",
+        "address": "369 Hospitality Avenue, Harare",
+        "phone": "+263 77 369 2580",
+        "website": "http://www.hararehospitality.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-327.svg",
+        "membership_level": "Gold",
+        "other_information": "Offering top-notch hospitality services."
+      },
+      {
+        "name": "Harare Real Estate Agency",
+        "address": "789 Real Estate Street, Harare",
+        "phone": "+263 77 789 3690",
+        "website": "http://www.hararerealestate.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-239.svg",
+        "membership_level": "Silver",
+        "other_information": "Expert in real estate sales and management."
+      },
+      {
+        "name": "Harare Tourism Bureau",
+        "address": "101 Tourism Road, Harare",
+        "phone": "+263 77 654 4560",
+        "website": "http://www.hararetourism.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-330.svg",
+        "membership_level": "Bronze",
+        "other_information": "Promoting tourism in Harare and beyond."
+      },
+      {
+        "name": "Harare Wellness Center",
+        "address": "246 Wellness Street, Harare",
+        "phone": "+263 77 135 8520",
+        "website": "http://www.hararewellness.com",
+        "image": "https://teekayzet.github.io/wdd230/chamber/logoplaceholder/logoipsum-331.svg",
+        "membership_level": "Platinum",
+        "other_information": "Committed to holistic health and wellness."
+      }
+    ]
+  }
+  
