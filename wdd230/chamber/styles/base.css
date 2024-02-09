@@ -43,16 +43,16 @@ header {
   width: fit-content;
   padding: 0 400px; /* Adjust as needed */
 }
-
+nav {
+  text-align: center;
+  background: #fff;
+  margin: auto;
+}
 nav li a {
   color: #000;
   text-decoration: none;
 }
 
-.navigation li {
-  display: inline-block;
-  margin-right: 160px; /* Add margin between list items */
-}
 
 .navigation li a:hover {
   color: #333;
