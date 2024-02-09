@@ -11,6 +11,8 @@
   display: block; /* Ensures the image is treated as a block-level element */
   margin: 0 auto; /* Centers the image horizontally within its container */
   max-width: 74%; /* Prevents the image from exceeding its original size */
+  border: #bed solid 1px;
+  border-radius: 5px;
 }
 .hero {
   position: relative;
