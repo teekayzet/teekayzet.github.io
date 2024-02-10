@@ -35,7 +35,9 @@ header {
   align-items: center;
   border-radius: 15px;
 }
-
+a{
+  color: rgb(71, 2, 71);
+}
 .top-heading h1 {
   display: block;
   color: black;
