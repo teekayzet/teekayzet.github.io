@@ -53,7 +53,6 @@ nav li a {
   text-decoration: none;
 }
 
-
 .navigation li a:hover {
   color: #333;
   text-decoration: line-through;
@@ -387,7 +386,7 @@ main h1 {
   background-color: #ffc8dd;
 }
 
-.membership h4{
+.membership h4 {
   text-decoration: overline;
 }
 
@@ -452,34 +451,38 @@ main {
 
 .card1 {
   background-image: linear-gradient(
-    180deg,
-    rgba(156, 154, 154, 0.7),
-    rgba(0, 0, 0, 0.8)
-  ), url(/wdd230/chamber/images/freeplan.webp);
+      180deg,
+      rgba(156, 154, 154, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/wdd230/chamber/images/freeplan.webp);
 }
 
 .card2 {
   background-image: linear-gradient(
-    180deg,
-    rgba(156, 154, 154, 0.7),
-    rgba(0, 0, 0, 0.8)
-  ), url(/wdd230/chamber/images/bronzeplan.webp);
+      180deg,
+      rgba(156, 154, 154, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/wdd230/chamber/images/bronzeplan.webp);
 }
 
 .card3 {
   background-image: linear-gradient(
-    180deg,
-    rgba(156, 154, 154, 0.7),
-    rgba(0, 0, 0, 0.8)
-  ), url(/wdd230/chamber/images/silverplan.webp);
+      180deg,
+      rgba(156, 154, 154, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/wdd230/chamber/images/silverplan.webp);
 }
 
 .card4 {
   background-image: linear-gradient(
-    180deg,
-    rgba(156, 154, 154, 0.7),
-    rgba(0, 0, 0, 0.8)
-  ), url(/wdd230/chamber/images/goldplan.webp);
+      180deg,
+      rgba(156, 154, 154, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/wdd230/chamber/images/goldplan.webp);
 }
 
 .cardtitle h3 {
@@ -513,9 +516,68 @@ main {
   color: rgb(27, 27, 27);
   border-radius: 5px;
 }
-.thank-you-message p{
+.thank-you-message p {
   color: #000;
 }
+/* CSS to align buttons to the left side of the page */
+#grid-view,
+#table-view {
+  margin-right: 10px; /* Add some space between the buttons */
+}
+
+.grid-buttons {
+  margin-left: 20px; /* Add margin to separate buttons from the content */
+}
+
+button {
+  padding: 5px;
+  background-color: #bed;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+#directory-container {
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between grid items */
+}
+
+.company-card {
+  margin: 10px;
+  flex: 1 1 300px; /* Adjust the width of each grid item */
+  border: 1px solid #bed;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #999;
+}
+
+/* For table view (list view) */
+.member-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.member-table th,
+.member-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.member-table th {
+  background-color: #bed; /* Header background color */
+}
+
+.member-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Even row background color */
+}
+
+.member-table tr:nth-child(odd) {
+  background-color: #bed; /* Odd row background color */
+}
+
 /* Footer styles */
 footer {
   text-align: center;
@@ -533,6 +595,25 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .company-caard {
+    flex: 1 1 300px; /* Adjust the width of each grid item */
+    padding: 5px;
+    margin: -10px;
+  }
+
+  .company-caard:nth-child(1) {
+    margin-top: 20px;
+  }
+  .company-caard:last-child {
+    margin-bottom: 20px;
+  }
+  .company-caard:nth-child(even) {
+    background-color: #bed; /* Even row background color */
+  }
+
+  .company-caard:nth-child(odd) {
+    background-color: #f9f9f9; /* Odd row background color */
+  }
   .top-heading h1 {
     padding: 20px 0;
   }
@@ -602,16 +683,6 @@ footer p {
     text-decoration: none;
     color: #fff;
   }
-
-  .open li {
-    display: block;
-    width: 100%;
-  }
-
-  .open li a {
-    display: block;
-  }
-
   .active::before {
     content: "⚡";
   }
@@ -623,10 +694,10 @@ footer p {
   .lazyloading picture:hover img {
     transform: scale(1);
   }
-  .design{
+  .design {
     display: block;
   }
-  .flip-card{
+  .flip-card {
     height: 325px;
   }
   .flip-card:hover .flip-card-inner {

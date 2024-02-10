@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Harare Chamber of Commerce Website - Takudzwa Mutamburigwa"
+      content="Harare Chamber of Commerce Directory - Takudzwa Mutamburigwa"
     />
     <meta name="author" content="Takudzwa Mutamburigwa" />
     <meta
       property="og:title"
-      content="Takudzwa - Mutamburigwa - Chamber of Commerce"
+      content="Takudzwa - Mutamburigwa - Chamber of Commerce Directory"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -28,7 +28,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <title>Harare Chamber of Commerce</title>
+    <title>Harare Chamber of Commerce Directory</title>
   </head>
   <body>
     <header>
@@ -45,9 +45,20 @@
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
-    <main>
-      <div id="directory-cards"></div>
+    <main id="directory">
+      <h1>Company Directory</h1>
+      <div class="grid-buttons">
+        <button id="grid-view">Grid View</button>
+        <button id="table-view">Table View</button>
+      </div>
+
+      <article class="grid">
+        <section class="sec">
+          <div id="directory-container"></div>
+        </section>
+      </article>
     </main>
+
     <footer>
       <p>
         &copy; <span id="currentYear"></span> Takudzwa Mutamburigwa, Zimbabwe
