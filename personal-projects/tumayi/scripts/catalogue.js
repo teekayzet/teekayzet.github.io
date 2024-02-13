@@ -1,4 +1,4 @@
-const linksURL = "https://teekayzet.github.io/personal-projects/tumayi/data/storecatalogue.json";
+const linksURL = "https://teekayzet.github.io/personal-projects/tumayi/data/storecatalogue.Json";
 
 // Fetch the store catalogue JSON data
 fetch(linksURL)
