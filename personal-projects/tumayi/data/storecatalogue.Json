@@ -1,0 +1,306 @@
+{
+    "store_catalogue": [
+        {
+            "category": "Electronics",
+            "items": [
+                {
+                    "item_id": 1,
+                    "item_name": "Smartphone",
+                    "description": "Latest smartphone model with advanced features.",
+                    "price": 799.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 2,
+                    "item_name": "Laptop",
+                    "description": "Powerful laptop for work and entertainment.",
+                    "price": 1299.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 3,
+                    "item_name": "Headphones",
+                    "description": "Wireless headphones with noise-cancellation technology.",
+                    "price": 199.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 4,
+                    "item_name": "Smartwatch",
+                    "description": "Fitness tracker and smartwatch with heart rate monitor.",
+                    "price": 149.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 5,
+                    "item_name": "Tablet",
+                    "description": "Portable tablet for browsing and entertainment.",
+                    "price": 399.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 6,
+                    "item_name": "Camera",
+                    "description": "High-quality digital camera for capturing memories.",
+                    "price": 599.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 7,
+                    "item_name": "Gaming Console",
+                    "description": "Next-gen gaming console for immersive gaming experiences.",
+                    "price": 499.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 8,
+                    "item_name": "VR Headset",
+                    "description": "Virtual reality headset for immersive VR experiences.",
+                    "price": 299.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 9,
+                    "item_name": "Portable Speaker",
+                    "description": "Bluetooth speaker for listening to music on the go.",
+                    "price": 79.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 10,
+                    "item_name": "External Hard Drive",
+                    "description": "High-capacity external hard drive for storage and backup.",
+                    "price": 99.99,
+                    "image_url": "https://via.placeholder.com/300"
+                }
+            ]
+        },
+        {
+            "category": "Clothing",
+            "items": [
+                {
+                    "item_id": 11,
+                    "item_name": "T-shirt",
+                    "description": "A comfortable cotton T-shirt available in various colors and sizes.",
+                    "price": 15.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 12,
+                    "item_name": "Jeans",
+                    "description": "Classic denim jeans for casual wear.",
+                    "price": 29.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 13,
+                    "item_name": "Sneakers",
+                    "description": "Stylish sneakers suitable for everyday use.",
+                    "price": 39.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 14,
+                    "item_name": "Dress Shirt",
+                    "description": "Formal dress shirt for professional occasions.",
+                    "price": 49.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 15,
+                    "item_name": "Hoodie",
+                    "description": "Cozy hoodie for chilly days.",
+                    "price": 34.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 16,
+                    "item_name": "Skirt",
+                    "description": "Fashionable skirt for a stylish look.",
+                    "price": 24.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 17,
+                    "item_name": "Jacket",
+                    "description": "Warm and stylish jacket for cold weather.",
+                    "price": 79.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 18,
+                    "item_name": "Sweatpants",
+                    "description": "Comfortable sweatpants for lounging.",
+                    "price": 19.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 19,
+                    "item_name": "Swimsuit",
+                    "description": "Stylish swimsuit for the beach or pool.",
+                    "price": 29.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 20,
+                    "item_name": "Winter Coat",
+                    "description": "Heavy-duty winter coat for extreme cold.",
+                    "price": 99.99,
+                    "image_url": "https://via.placeholder.com/300"
+                }
+            ]
+        },
+        {
+            "category": "Books",
+            "items": [
+                {
+                    "item_id": 21,
+                    "item_name": "Fiction Novel",
+                    "description": "Bestselling fiction novel for a thrilling read.",
+                    "price": 12.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 22,
+                    "item_name": "Cookbook",
+                    "description": "Collection of delicious recipes for home cooking.",
+                    "price": 24.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 23,
+                    "item_name": "Self-Help Book",
+                    "description": "Guide to personal growth and self-improvement.",
+                    "price": 14.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 24,
+                    "item_name": "Biography",
+                    "description": "Inspiring biography of a notable figure.",
+                    "price": 19.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 25,
+                    "item_name": "Travel Guide",
+                    "description": "Comprehensive travel guide for planning your next trip.",
+                    "price": 29.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 26,
+                    "item_name": "Art Book",
+                    "description": "Beautifully illustrated book exploring art history.",
+                    "price": 39.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 27,
+                    "item_name": "Science Fiction Novel",
+                    "description": "Exciting science fiction novel set in a distant future.",
+                    "price": 16.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 28,
+                    "item_name": "History Book",
+                    "description": "Insightful exploration of historical events.",
+                    "price": 21.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 29,
+                    "item_name": "Poetry Collection",
+                    "description": "Anthology of beautiful poetry from various poets.",
+                    "price": 11.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 30,
+                    "item_name": "Fantasy Novel",
+                    "description": "Epic fantasy novel filled with adventure and magic.",
+                    "price": 17.99,
+                    "image_url": "https://via.placeholder.com/300"
+                }
+            ]
+        },
+        {
+            "category": "Home & Kitchen",
+            "items": [
+                {
+                    "item_id": 31,
+                    "item_name": "Cookware Set",
+                    "description": "Complete set of high-quality cookware for your kitchen.",
+                    "price": 199.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 32,
+                    "item_name": "Coffee Maker",
+                    "description": "Automatic coffee maker for brewing your favorite coffee.",
+                    "price": 79.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 33,
+                    "item_name": "Bedding Set",
+                    "description": "Luxurious bedding set for a comfortable night's sleep.",
+                    "price": 129.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 34,
+                    "item_name": "Vacuum Cleaner",
+                    "description": "Powerful vacuum cleaner for keeping your home clean.",
+                    "price": 149.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 35,
+                    "item_name": "Dinnerware Set",
+                    "description": "Elegant dinnerware set for serving meals in style.",
+                    "price": 59.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 36,
+                    "item_name": "Blender",
+                    "description": "High-speed blender for making smoothies and shakes.",
+                    "price": 49.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 37,
+                    "item_name": "Curtains",
+                    "description": "Stylish curtains to enhance the decor of your home.",
+                    "price": 39.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 38,
+                    "item_name": "Rice Cooker",
+                    "description": "Automatic rice cooker for perfectly cooked rice every time.",
+                    "price": 29.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 39,
+                    "item_name": "Throw Pillows",
+                    "description": "Decorative throw pillows to add comfort and style.",
+                    "price": 19.99,
+                    "image_url": "https://via.placeholder.com/300"
+                },
+                {
+                    "item_id": 40,
+                    "item_name": "Cutlery Set",
+                    "description": "Complete set of stainless steel cutlery for your dining table.",
+                    "price": 39.99,
+                    "image_url": "https://via.placeholder.com/300"
+                }
+            ]
+        }
+
+        
+    ]
+}

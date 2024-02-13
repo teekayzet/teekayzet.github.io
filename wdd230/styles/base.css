@@ -251,6 +251,7 @@ footer p {
     text-decoration: none;
     color: #fff;
   }
+  
 
   /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
   .open li {
