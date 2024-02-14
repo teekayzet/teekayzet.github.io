@@ -1,4 +1,6 @@
 /* Basic styling */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -28,14 +30,30 @@ header {
   height: auto;
   margin-right: 20px; /* Space between image and text */
 }
-
 nav {
   display: flex;
   align-items: center;
   position: fixed; /* or position: absolute; */
-  background-color: white; /* Add a background color to distinguish the menu */
   z-index: 999; /* Ensure the menu appears above other content */
+  text-align: center;
+  background: #074a64;
+  max-width: 970px;
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+nav li a {
+  color: #fff;
+  font-size: larger;
+  text-decoration: none;
+  margin: 0 50px;
+}
+
+nav li a:hover {
+  color: #82B7CC; /* Pink color */
+  text-decoration: line-through;
+}
+
 
 #menu {
   font-size: 28px; /* Increase the font size */
@@ -56,13 +74,263 @@ main {
   color: #074a64;
   text-align: center;
 }
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #fff;
-  color: #074a64;
-  position: -ms-page;
-  bottom: 0;
-  margin: 20px;
-  padding: 10px;
+
+/* Style for product items */
+.item {
+  display: inline-block; /* Display items side by side */
+  width: 200px; /* Set a fixed width for each item */
+  height: 300px; /* Set a fixed height for each item */
+  margin: 10px; /* Add some margin around each item */
+  padding: 10px; /* Add padding inside each item */
+  background-color: #B2CBD3; /* Set background color */
+  color: #23282A; /* Set font color */
+  border-radius: 5px; /* Add border radius */
+  overflow: hidden; /* Ensure content does not exceed item size */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Add transition effect */
 }
+
+/* Hover effect */
+.item:hover {
+  background-color: #82B7CC; /* Change background color on hover */
+  box-shadow: 0px 0px 20px #00546F; /* Adjust box shadow on hover */
+}
+
+/* Style for product image */
+.item img {
+  width: 100%; /* Make image fill its container */
+  height: 40%; /* Set image height to 60% of item height */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#right {
+  flex: 1;
+}
+
+/* Sign In */
+#signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+#signin form {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+#signin .logo {
+  margin-bottom: 8vh;
+}
+
+#signin .logo img {
+  width: 100px;
+  height: auto;
+}
+
+#signin label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#signin .text-input {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 2px;
+  background: white;
+  border: 1px solid #555;
+  color: #074a64;
+  padding: 0.5rem 1rem;
+  line-height: 1.3rem;
+}
+
+#signin .primary-btn {
+  width: 100%;
+}
+
+#signin .secondary-btn,
+.or,
+.links {
+  width: 60%;
+}
+
+#signin .links a {
+  display: block;
+  color: #23282A;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#signin .or {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+
+#signin .or .bar {
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #23282A;
+}
+
+#signin .or span {
+  color: #23282A;
+  padding: 0 0.8rem;
+}
+
+/* Showcase */
+#showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/personal-projects/tumayi/images/hero.webp') no-repeat center center / cover;
+  height: 100vh;
+  text-align: center;
+}
+
+#showcase .showcase-text {
+  font-size: 3rem;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+#showcase .secondary-btn {
+  width: 60%;
+  margin: auto;
+}
+
+/* Footer */
+#main-footer {
+  color: #074a64;
+  text-align: center;
+  font-size: 0.8rem;
+  max-width: 80%;
+  padding-top: 5rem;
+}
+
+#main-footer a {
+  color: #23282A;
+  text-decoration: underline;
+}
+
+/* Button */
+.primary-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: 0;
+  border-radius: 2px;
+  font-weight: 500;
+  background: #074a64;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.primary-btn:hover {
+  background-color: #074a64;
+}
+
+.secondary-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: 1px solid #23282A;
+  border-radius: 2px;
+  font-weight: 500;
+  background: none;
+  color: #074a64;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+  border-color: #101c20;
+  color: #101c20;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  #left {
+    flex: 4;
+  }
+
+  #right {
+    flex: 6;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #left {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+
+  #signin .logo {
+    margin-bottom: 2vh;
+  }
+
+  #signin .text-input {
+    margin-bottom: 0.7rem;
+  }
+
+  #main-footer {
+    padding-top: 1rem;
+  }
+}
+
+
+footer {
+	background-color: #fff; /* Changed */
+	color: #074a64;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+  }

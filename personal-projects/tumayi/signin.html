@@ -8,26 +8,84 @@
   </head>
   <body>
     <header>
-      <h1>Tumayi Online Market</h1>
+      <div class="profile">
+        <img
+          src="/personal-projects/tumayi/images/logo.webp"
+          alt="logo: tumayi logo"
+        />
+      </div>
+
       <nav>
-        <ul>
+        <button id="menu" onclick="toggleMenu()">&#9776;</button>
+        <ul id="navigation">
           <li><a href="/personal-projects/tumayi/index.html">Home</a></li>
           <li><a href="/personal-projects/tumayi/catalog.html">Products</a></li>
           <li><a href="/personal-projects/tumayi/about.html">About Us</a></li>
-          <li><a href="/personal-projects/tumayi/contact.html">Contact</a></li>
           <li><a href="/personal-projects/tumayi/signin.html">SignIn</a></li>
           <li><a href="/personal-projects/tumayi/signup.html">SignUp</a></li>
         </ul>
       </nav>
     </header>
-    <menu>
 
-    </menu>
+    <main>
+      <h1>Tumayi Online Shopping Center</h1>
+      <p>
+        "Discover Your Perfect Fit at Tumayi: Where Style Meets Convenience!"
+      </p>
+
+      <div id="wrapper">
+        <div id="left">
+          <div id="signin">
+            <div class="logo">
+              <img
+                src="/personal-projects/tumayi/images/logoicon.webp"
+                alt="tumayi"
+              />
+            </div>
+            <form>
+              <div>
+                <label>Email or username</label>
+                <input type="text" class="text-input" />
+              </div>
+              <div>
+                <label>Password</label>
+                <input type="password" class="text-input" />
+              </div>
+              <button type="submit" class="primary-btn">Sign In</button>
+            </form>
+            <div class="links">
+              <a href="#">Forgot Password</a>
+              <a href="#">Sign in with company or school</a>
+            </div>
+            <div class="or">
+              <hr class="bar" />
+              <span>OR</span>
+              <hr class="bar" />
+            </div>
+            <a href="#" class="secondary-btn">Create an account</a>
+          </div>
+        </div>
+        <div id="right">
+          <div id="showcase">
+            <div class="showcase-content">
+              <h1 class="showcase-text">Discover, Shop, Delight: Your Online Haven at <strong>Tumayi!</strong>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script src="/personal-projects/tumayi/scripts/addCart.js"></script>
     <script src="/personal-projects/tumayi/scripts/slide.js"></script>
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Tumayi. All rights reserved.</p>
+    <script src="/personal-projects/tumayi/scripts/hambutton.js"></script>
+    <script src="/personal-projects/tumayi/scripts/catalogue.js"></script>
+    <script src="/personal-projects/tumayi/scripts/signIn.js"></script>
+
+    <footer id="main-footer">
+      <p>Copyright &copy; 2024, Tumayi All Rights Reserved</p>
+      <div>
+        <a href="#">terms of use</a> | <a href="#">Privacy Policy</a>
       </div>
     </footer>
   </body>
