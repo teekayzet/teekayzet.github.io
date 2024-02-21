@@ -45,6 +45,10 @@
             </ul>
           </nav>
     <main>
+      <div id="banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        <span class="close-btn" onclick="closeBanner()">❌</span>
+      </div>
       <div class="main">
         <div class="hero">
           <img
@@ -53,84 +57,11 @@
           />
         </div>
         <div class="company-spotlights-container">
-          <div class="company-spotlight active">
-            <div class="logo-container">
-              <img
-                src="/wdd230/chamber/images/company1-logo.png"
-                alt="Tenga Easy"
-                class="logo"
-              />
-              <h3>Company1</h3>
-            </div>
-            <div class="content">
-              <p>
-                We are a roofing company with over 30 years experience in all
-                aspects of roofing. Our roofing services cover both residential
-                and commercial sectors, working with Construction
-                companies,Property developers, landlords, surveyors and
-                architects. All our workforce are skilled and fully qualified.
-                We are a roofing company with over 30 years experience in all
-                aspects of roofing. Our roofing services cover both residential
-                and commercial sectors, working with Construction
-                companies,Property developers, landlords, surveyors and
-                architects. All our workforce are skilled and fully qualified.
-              </p>
-              <a href="#"><h4>Learn More</h4></a>
-            </div>
-          </div>
-          <div class="company-spotlight">
-            <div class="logo-container">
-              <img
-                src="/wdd230/chamber/images/company2-logo.png"
-                alt="The Roof"
-                class="logo"
-              />
-              <h3>Company2</h3>
-            </div>
-            <div class="content">
-              <p>
-                We are a roofing company with over 30 years experience in all
-                aspects of roofing. Our roofing services cover both residential
-                and commercial sectors, working with Construction
-                companies,Property developers, landlords, surveyors and
-                architects. All our workforce are skilled and fully qualified.
-                We are a roofing company with over 30 years experience in all
-                aspects of roofing. Our roofing services cover both residential
-                and commercial sectors, working with Construction
-                companies,Property developers, landlords, surveyors and
-                architects. All our workforce are skilled and fully qualified.
-              </p>
-              <a href="#"><h4>Learn More</h4></a>
-            </div>
-          </div>
-          <div class="company-spotlight">
-            <div class="logo-container">
-              <img
-                src="/wdd230/chamber/images/company3-logo.png"
-                alt="Kumusha"
-                class="logo"
-              />
-              <h3>Company3</h3>
-            </div>
-            <div class="content">
-              <p>
-                We are a roofing company with over 30 years experience in all
-                aspects of roofing. Our roofing services cover both residential
-                and commercial sectors, working with Construction
-                companies,Property developers, landlords, surveyors and
-                architects. All our workforce are skilled and fully qualified.
-                We are a roofing company with over 30 years experience in all
-                aspects of roofing. Our roofing services cover both residential
-                and commercial sectors, working with Construction
-                companies,Property developers, landlords, surveyors and
-                architects. All our workforce are skilled and fully qualified.
-              </p>
-              <a href="#"><h4>Learn More</h4></a>
-            </div>
-          </div>
+          <!-- JavaScript will dynamically insert spotlight advertisements here -->
         </div>
+        
         <div class="card-container">
-          <section class="card">
+          <section class="carrd">
             <h3>Upcoming Events</h3>
             <!-- Placeholder information about weather, visits, etc. -->
             <p>
@@ -149,26 +80,15 @@
               orci. Mauris aliquet fermentum gravida. Donec at erat ligula.
             </p>
           </section>
-          <section class="card">
+          <section class="carrd">
             <h3>Current Weather</h3>
-            <!-- Placeholder information about weather, visits, etc. -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              faucibus eros vel lacus facilisis, quis auctor nunc dignissim.
-              Suspendisse tempus odio sagittis pellentesque vulputate. Duis sit
-              amet turpis mi. Maecenas facilisis rhoncus dui, in pretium augue.
-              Duis sit amet sapien eros. Duis mollis sem eu ex feugiat, at
-              vehicula ipsum eleifend. Nam in mi condimentum leo iaculis
-              vehicula et vel odio. Etiam tempor pharetra nunc sit amet
-              ultricies. Sed in aliquet augue. Praesent varius imperdiet quam
-              sed ultricies. Ut eu urna in enim venenatis consequat ac dignissim
-              neque. Sed hendrerit nisl eget dui maximus, eget sagittis tortor
-              finibus. Suspendisse at ipsum nisl. Integer laoreet, quam sit amet
-              porta pulvinar, lacus magna tempor dui, a sollicitudin mi augue ac
-              orci. Mauris aliquet fermentum gravida. Donec at erat ligula.
-            </p>
+              <span id="current-temp"></span>
+              <figure>
+                <img id="weather-icon" alt="Weather icon" src="https://openweathermap.org/img/w/" />
+                <figcaption></figcaption>
+              </figure>
           </section>
-          <section class="card">
+          <section class="carrd">
             <h3>Become a Member</h3>
             <p>
               Join the Harare Chamber of Commerce and unlock a world of
@@ -182,7 +102,7 @@
               today and take the first step towards a brighter future for your
               business.
             </p>
-            <a class="call-to-action" href="join-chamber.html"
+            <a class="call-to-action" href="/wdd230/chamber/join.html"
               ><h2>Join Us</h2></a
             >
           </section>
@@ -199,5 +119,7 @@
     <script src="/wdd230/chamber/scripts/spotlight.js"></script>
     <script src="/wdd230/chamber/scripts/getDates.js"></script>
     <script src="/wdd230/chamber/scripts/hambutton.js"></script>
+    <script src="/wdd230/chamber/scripts/weather.js"></script>
+    <script src="/wdd230/chamber/scripts/banner.js"></script>
   </body>
 </html>
